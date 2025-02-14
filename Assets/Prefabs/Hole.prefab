@@ -50,8 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveToPositionDuration: 1.5
-  minFlipAt: 3
-  maxFlipAt: 15
+  movementYOffset: -5
+  minFlipAt: 5
+  maxFlipAt: 12
 --- !u!33 &4532807520370119436
 MeshFilter:
   m_ObjectHideFlags: 0

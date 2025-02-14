@@ -30,10 +30,11 @@ public class Hole : MonoBehaviour
         if (flipTimer <= 0)
         {
             flipTimer = Random.Range(minFlipAt, maxFlipAt);
-            bonusSide = !bonusSide;
             animator.Play(bonusSide ? "Flip" : "Flip back", 0, 0);
         }
     }
+
+    public void OnFlipDone() => bonusSide = !bonusSide;
 
     public void MoveToNewPosition(Vector3 newPosition)
     {
